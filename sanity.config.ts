@@ -3,15 +3,15 @@ import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET;
-
+/* const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
+const dataset = process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET!;
+ */
 export default defineConfig({
   basePath: "/studio",
   name: "default",
   title: "nextjs13 sanity blog",
-  projectId,
-  dataset,
+  projectId: "qjsvm2kg",
+  dataset: "production",
   plugins: [deskTool(), visionTool()],
   schema: {
     types: schemaTypes,
