@@ -15,5 +15,5 @@ if (!projectId || !dataset) {
 export const usePreview = definePreview({
   projectId,
   dataset,
-  onPublicAccessOnly,
+  onPublishAccesOnly,
 });
